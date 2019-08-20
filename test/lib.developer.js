@@ -22,6 +22,6 @@ describe('Developer method', () => {
   it('should not throw an error if too many apps requested', () =>
     gplay.developer({ devId: 'Google LLC', num: 500 })
       .then((apps) => {
-        assert(apps.length >= 100, 'should return as many apps as availabe');
+        assert(apps.length >= 20, 'should return as many apps as available');
       }));
 });
